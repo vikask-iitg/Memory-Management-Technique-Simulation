@@ -1,13 +1,45 @@
-# Memory-Management-Simulation
-Memory Management system simulation
+# Memory Management Simulation
 
-The program is meant to do a comparative study of **paging system** and **non-paging** system, also performance of paging system's dependence of several parameters such as page-replacement algorithm(LRU,FIFO,random) , swap-space size, page size.
+## Overview
 
-The entire code is divided into 3 sub modules  
- - [Data Generator](Code-Memory-Management-Simulator/data_generator.h) to simulate the data generation.
- - [Non-Paging System](Code-Memory-Management-Simulator/non_paging_system.h) implements the contiguos allocation(variable partition) technique using first fit algorithm.
- - [Paging System](Code-Memory-Management-Simulator/paging_system.h) implements paging system.
+This project simulates memory management systems to compare paging and non-paging techniques. It evaluates performance based on various parameters including page-replacement algorithms (LRU, FIFO, Random), swap-space size, and page size. The simulation is divided into three main modules, each handling different aspects of memory management.
 
-Lastly [main.cpp](Code-Memory-Management-Simulator/main.cpp) integrates all these ,also several perfomance metrics like page hit/miss ratio, page replacement time,etc.
+## Modules
 
+### 1. Data Generator
 
+- **Purpose:** Simulates the generation of memory access data for the simulation.
+- **Functionality:** Produces a set of random memory access requests to be used by both paging and non-paging systems.
+
+### 2. Non-Paging System
+
+- **Purpose:** Implements the contiguous allocation technique using a variable partition approach.
+- **Algorithm:** Uses the first-fit algorithm to allocate memory blocks.
+- **Functionality:** Manages memory without paging, focusing on contiguous memory allocation.
+
+### 3. Paging System
+
+- **Purpose:** Simulates a paging memory management system.
+- **Functionality:** Handles memory using paging, evaluating the impact of various page-replacement algorithms (LRU, FIFO, Random).
+
+### 4. Main Program (`main.cpp`)
+
+- **Purpose:** Integrates all modules and runs the simulation.
+- **Functionality:** Coordinates between the Data Generator, Non-Paging System, and Paging System. Measures and reports performance metrics such as page hit/miss ratio and page replacement time.
+
+## Objectives
+
+- **Compare Paging and Non-Paging Systems:** Analyze and compare the performance of paging versus non-paging memory management systems.
+- **Evaluate Page Replacement Algorithms:** Assess the effectiveness of different page-replacement algorithms (LRU, FIFO, Random).
+- **Analyze Parameters:** Study the impact of swap-space size and page size on system performance.
+
+## Conclusion
+
+The Memory Management Simulation project provides insights into the performance of paging and non-paging memory management systems. By simulating different algorithms and system parameters, it offers a comparative analysis to understand the strengths and limitations of various memory management techniques.
+
+## Getting Started
+
+To replicate this analysis, clone the repository and follow the instructions provided in the `setup.md` file.
+
+```bash
+git clone https://github.com/vikask-iitg/Memory-Management-Technique-Simulation.git
