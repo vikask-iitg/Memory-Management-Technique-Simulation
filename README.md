@@ -1,4 +1,4 @@
-# Memory Management Simulation
+# Memory Management Technique Simulation
 
 ## Overview
 
